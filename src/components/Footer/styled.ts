@@ -7,6 +7,6 @@ export const FooterContainer = styled.footer`
   margin-bottom: 1rem;
 
   span {
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.text_label};
   }
 `
