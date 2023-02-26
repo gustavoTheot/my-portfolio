@@ -40,7 +40,9 @@ export const RoadMapInformas = styled.div`
 
     padding-bottom: 0.125rem;
     width: 9.4rem;
-    border-bottom: 4px solid ${(props) => props.theme.colors.border};
+    border-bottom: 4px solid ${(props) => props.theme.colors.border_bottom};
+
+    color: ${(props) => props.theme.colors.text_label};
   }
 
   ul {
@@ -70,6 +72,8 @@ export const Informs = styled.div`
   flex-direction: column;
   gap: 0.5rem;
 
+  color: ${(props) => props.theme.colors.text_label};
+
   p {
     margin-top: 0.5rem;
     text-align: justify;
@@ -79,8 +83,6 @@ export const Informs = styled.div`
 
   span {
     margin-top: 0.25rem;
-
-    color: ${(props) => props.theme.colors.line_arrow};
 
     display: flex;
     flex-direction: row;
@@ -93,7 +95,7 @@ export const Bulletede = styled.div`
   width: 1rem;
   height: 1rem;
 
-  background-color: ${(props) => props.theme.colors.text};
+  background-color: ${(props) => props.theme.colors.bulleted};
   border-radius: 99%;
 
   margin-left: -0.5rem;

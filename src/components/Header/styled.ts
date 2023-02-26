@@ -28,12 +28,12 @@ export const HeaderContainer = styled.header`
 
       list-style: none;
       &:hover {
-        border-bottom: 4px solid ${(props) => props.theme.colors.border};
+        border-bottom: 4px solid ${(props) => props.theme.colors.border_bottom};
       }
 
       a {
         text-decoration: none;
-        color: ${(props) => props.theme.colors.text};
+        color: ${(props) => props.theme.colors.text_label};
       }
     }
 

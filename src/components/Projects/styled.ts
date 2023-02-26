@@ -17,7 +17,8 @@ export const MyProjects = styled.div`
 
   h1 {
     width: 8rem;
-    border-bottom: 4px solid ${(props) => props.theme.colors.border};
+    color: ${(props) => props.theme.colors.text_label};
+    border-bottom: 4px solid ${(props) => props.theme.colors.border_bottom};
   }
 
   ul {
@@ -36,7 +37,7 @@ export const MyProjects = styled.div`
       padding: 2.6rem 6.5rem;
 
       border-radius: 8px;
-      border: 1px solid ${(props) => props.theme.colors.text};
+      border: 1px solid ${(props) => props.theme.colors.text_label};
 
       img {
         border-radius: 8px;
@@ -59,8 +60,12 @@ export const MyProjects = styled.div`
 export const Project = styled.div``
 
 export const InformProject = styled.div`
+  h3 {
+    color: ${(props) => props.theme.colors.text_label};
+  }
   p {
     margin-top: 1rem;
+    color: ${(props) => props.theme.colors.text_label};
 
     @media (max-width: 776px) {
       width: 18rem;
@@ -80,8 +85,8 @@ export const LinksProject = styled.div`
 
     border-radius: 8px;
 
-    color: ${(props) => props.theme.colors.background};
-    background-color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.text_input};
+    background-color: ${(props) => props.theme.colors.buttons};
   }
 
   @media (max-width: 776px) {

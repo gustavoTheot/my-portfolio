@@ -12,7 +12,7 @@ export const AboutMeContainer = styled.div`
 
 export const ArrowTop = styled.a`
   text-decoration: none;
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.text_label};
 
   svg {
     position: fixed;
@@ -32,6 +32,7 @@ export const MyName = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
+  color: ${(props) => props.theme.colors.text_label};
 
   @media (max-width: 776px) {
     display: flex;
@@ -44,6 +45,7 @@ export const MyName = styled.div`
 export const Description = styled.div`
   max-width: 48rem;
   text-align: center;
+  color: ${(props) => props.theme.colors.text_label};
 
   @media (max-width: 776px) {
     padding: 1rem;

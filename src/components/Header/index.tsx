@@ -1,16 +1,15 @@
+import { useState, useContext } from 'react'
 import { HeaderContainer } from './styled'
-import moon from '../../assets/moon.svg'
-import sun from '../../assets/sun.svg'
-import light from '../../styles/themes/light'
 import { List } from 'phosphor-react'
-import { useState } from 'react'
+import { ThemeContext } from 'styled-components'
+import Switch from 'react-switch'
 
 interface Props {
-  typeThemes: {}
-  toggleThemes: () => void
+  toggleTheme: () => void
 }
 
-export function Header({ toggleThemes, typeThemes }: Props) {
+export function Header({ toggleTheme }: Props) {
+  const { colors, title } = useContext(ThemeContext)
   const [open, setOpen] = useState(false)
 
   function handleMenu() {
@@ -43,15 +42,17 @@ export function Header({ toggleThemes, typeThemes }: Props) {
           <a href="#">Contact</a>
         </li>
 
-        {typeThemes === light ? (
-          <button onClick={toggleThemes}>
-            <img src={moon} alt="" />
-          </button>
-        ) : (
-          <button onClick={toggleThemes}>
-            <img src={sun} alt="" />
-          </button>
-        )}
+        <Switch
+          onChange={toggleTheme}
+          checked={title === 'dark'}
+          checkedIcon={false}
+          uncheckedIcon={false}
+          height={10}
+          width={40}
+          handleDiameter={20}
+          offColor={colors.text_label}
+          onColor={colors.text_label}
+        />
       </ul>
     </HeaderContainer>
   )

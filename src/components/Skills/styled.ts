@@ -17,7 +17,8 @@ export const MySkills = styled.div`
 
   h1 {
     width: 5.5rem;
-    border-bottom: 4px solid ${(props) => props.theme.colors.border};
+    border-bottom: 4px solid ${(props) => props.theme.colors.border_bottom};
+    color: ${(props) => props.theme.colors.text_label};
   }
 
   ul {
@@ -37,8 +38,8 @@ export const MySkills = styled.div`
       align-items: center;
 
       border-radius: 8px;
-      color: ${(props) => props.theme.colors.background};
-      background-color: ${(props) => props.theme.colors.text};
+      color: ${(props) => props.theme.colors.text_input};
+      background-color: ${(props) => props.theme.colors.buttons};
     }
 
     @media (max-width: 776px) {

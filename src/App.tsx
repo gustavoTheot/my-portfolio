@@ -14,21 +14,15 @@ import { Footer } from './components/Footer'
 function App() {
   const [theme, setTheme] = useState(light)
 
-  function toggleTheme() {
-    if (theme.title === 'light') {
-      setTheme(dark)
-      console.log('está em dark')
-    } else {
-      setTheme(light)
-      console.log('está em light')
-    }
+  const toggleTheme = () => {
+    setTheme(theme.title === 'light' ? dark : light)
   }
 
   return (
     <ThemeProvider theme={theme}>
       <AppContainer>
         <GlobalStyled />
-        <Header toggleThemes={toggleTheme} typeThemes={theme} />
+        <Header toggleTheme={toggleTheme} />
         <AboutMe />
         <Skills />
         <RoadMap />
