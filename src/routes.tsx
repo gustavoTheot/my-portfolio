@@ -5,7 +5,7 @@ import { Error } from "./components/Error";
 export function MyRoutes() {
     return (
         <Routes>
-            <Route path="/home" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/err" element={<Error />} />
         </Routes>
     )
