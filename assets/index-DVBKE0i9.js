@@ -190,7 +190,7 @@ Error generating stack: `+i.message+`
     p{
         color: ${e=>e.theme["gray-200"]};
     }
-`;function O6(){return $.jsxs(R6,{children:[$.jsx(dh,{size:52}),$.jsx("h1",{children:"Algo de errado não está certo"}),$.jsx("span",{children:"Volte mais tarde"})]})}function M6(){return $.jsxs(P2,{children:[$.jsx(Ou,{path:"/home",element:$.jsx(T6,{})}),$.jsx(Ou,{path:"/err",element:$.jsx(O6,{})})]})}const A6=xe.footer`
+`;function O6(){return $.jsxs(R6,{children:[$.jsx(dh,{size:52}),$.jsx("h1",{children:"Algo de errado não está certo"}),$.jsx("span",{children:"Volte mais tarde"})]})}function M6(){return $.jsxs(P2,{children:[$.jsx(Ou,{path:"/",element:$.jsx(T6,{})}),$.jsx(Ou,{path:"/err",element:$.jsx(O6,{})})]})}const A6=xe.footer`
     margin-top: 5rem;
     margin-bottom: 1.5rem;
     color: ${e=>e.theme["gray-200"]};
