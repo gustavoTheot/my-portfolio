@@ -40,7 +40,7 @@ export function Header() {
                 <NavBar>
                     <ul>
                         <li>
-                            <Link to={'/home'}>Sobre</Link>
+                            <Link to={'/'}>Sobre</Link>
                         </li>
                         <li>
                             <Link to={'/err'}>Projetos</Link>
